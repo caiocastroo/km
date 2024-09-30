@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>APP flex</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Arquivo manifesto (instalação app)-->
+    <link rel="manifest" href="manifest.json">
+  <link rel="shortcut icon" href="img/km.png" type="image/x-icon">
+</head>
+<body>
+    <div class="conteiner">
+        <h1>Conversão de Km para Metros</h1>
+        <form name = "frmKm" >
+            <img src="img/km.png" alt="mostrador" id="status">
+            <input type="number" step ="any" name="inputKm"
+            placeholder="Km" required>
+            <input type="button" value="calcular" onclick="calcular()">
+            <input type="number" step ="any"name="inputMetros"
+            placeholder="Metros" >
+            <input type="reset" value="Limpar">
+        </form>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>
